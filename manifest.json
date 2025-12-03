@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "Acessibilidade+",
+  "name": "R3 Acessibility",
   "version": "1.2",
   "description": "Ferramentas de acessibilidade: zoom, contraste, dislexia, leitura, foco.",
   "permissions": ["activeTab", "scripting", "tts", "storage"],
