@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "Acessibilidade+",
+  "version": "1.2",
+  "description": "Ferramentas de acessibilidade: zoom, contraste, dislexia, leitura, foco.",
+  "permissions": ["activeTab", "scripting", "tts", "storage"],
+  "host_permissions": ["<all_urls>"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/Logo-r3-vetor-16.png",
+      "48": "icons/Logo-r3-vetor-48.png",
+      "128": "icons/Logo-r3-vetor-128.png"
+    }
+  },
+      "icons": {
+      "16": "icons/Logo-r3-vetor-16.png",
+      "48": "icons/Logo-r3-vetor-48.png",
+      "128": "icons/Logo-r3-vetor-128.png",
+      "512": "icons/Logo-r3-vetor-512.png"
+    }
+  
+}

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>R3 +</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Acessibilidade+</h1>
+      <p class="subtitle">Ferramentas rápidas para facilitar a navegação</p>
+    </header>
+
+    <main>
+      <section class="group">
+        <div
+          style="display: flex; gap: 8px; align-items: center; flex-wrap: wrap"
+        >
+          <button
+            id="colorblindMode"
+            class="btn"
+            aria-pressed="false"
+            aria-controls="colorblindProfile"
+          >
+            Modo Daltônico
+          </button>
+          <label
+            for="colorblindProfile"
+            style="display: flex; align-items: center; gap: 6px; margin: 0"
+          >
+            <span style="font-size: 13px; color: #444">Perfil:</span>
+            <select
+              id="colorblindProfile"
+              style="padding: 6px; border-radius: 6px; border: 1px solid #ddd"
+            >
+              <option value="protanopia">Protanopia</option>
+              <option value="deuteranopia">Deuteranopia</option>
+              <option value="tritanopia">Tritanopia</option>
+              <option value="enhance">Melhorar contraste</option>
+            </select>
+          </label>
+        </div>
+      </section>
+
+      <section class="group">
+        <button id="increasePage" class="btn">+ Aumentar Fonte (Página)</button>
+        <button id="decreasePage" class="btn">− Diminuir Fonte (Página)</button>
+        <button id="resetFont" class="btn">Resetar Fonte (Página)</button>
+      </section>
+
+      <section class="group">
+        <button id="increaseElement" class="btn">
+          + Aumentar Fonte (Elemento)
+        </button>
+        <button id="decreaseElement" class="btn">
+          − Diminuir Fonte (Elemento)
+        </button>
+        <button id="resetAll" class="btn">Resetar Tudo</button>
+      </section>
+
+      <section class="group">
+        <button id="highContrast" class="btn">Alto Contraste</button>
+        <button id="dyslexiaMode" class="btn">Modo Dislexia</button>
+        <button id="largeCursor" class="btn">Cursor Ampliado</button>
+        <button id="highlightLinks" class="btn">Destacar Links</button>
+      </section>
+
+      <section class="group">
+        <button id="readText" class="btn">
+          Ler Texto Selecionado / Página
+        </button>
+        <button id="focusMode" class="btn">Foco de Leitura</button>
+      </section>
+
+      <section class="group small">
+        <label for="ttsRate"
+          >Velocidade (voz): <span id="rateVal">1.0</span>x</label
+        >
+        <input
+          id="ttsRate"
+          type="range"
+          min="0.5"
+          max="2.0"
+          step="0.1"
+          value="1.0"
+        />
+      </section>
+
+      <!-- Regra de 3: usuário insere 3 números e obtém o resultado -->
+      <section class="group">
+        <h2 style="margin: 0; font-size: 14px">Regra de 3</h2>
+        <div style="display: flex; gap: 8px; flex-wrap: wrap; margin-top: 8px">
+          <label style="flex: 1; min-width: 80px"
+            >A
+            <input
+              id="ruleA"
+              type="number"
+              step="any"
+              placeholder="Ex: 10"
+              style="
+                width: 100%;
+                padding: 6px;
+                border-radius: 6px;
+                border: 1px solid #ddd;
+                margin-top: 6px;
+              "
+            />
+          </label>
+          <label style="flex: 1; min-width: 80px"
+            >B
+            <input
+              id="ruleB"
+              type="number"
+              step="any"
+              placeholder="Ex: 20"
+              style="
+                width: 100%;
+                padding: 6px;
+                border-radius: 6px;
+                border: 1px solid #ddd;
+                margin-top: 6px;
+              "
+            />
+          </label>
+          <label style="flex: 1; min-width: 80px"
+            >C
+            <input
+              id="ruleC"
+              type="number"
+              step="any"
+              placeholder="Ex: 5"
+              style="
+                width: 100%;
+                padding: 6px;
+                border-radius: 6px;
+                border: 1px solid #ddd;
+                margin-top: 6px;
+              "
+            />
+          </label>
+        </div>
+        <div style="display: flex; gap: 8px; margin-top: 8px">
+          <button id="calcRule" class="btn" style="flex: 1">Calcular</button>
+          <button id="clearRule" class="btn" style="flex: 1">Limpar</button>
+        </div>
+        <div
+          id="ruleResult"
+          aria-live="polite"
+          style="margin-top: 8px; color: #333; font-weight: 600"
+        >
+          Resultado: —
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <small>Desenvolvido por Equipe R3 Acessibility • Extensão exemplo</small>
+    </footer>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
