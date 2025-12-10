@@ -12,6 +12,74 @@
       <p class="subtitle">Ferramentas rápidas para facilitar a navegação</p>
     </header>
 
+       <!-- Regra de 3: usuário insere 3 números e obtém o resultado -->
+      <section class="group">
+        <h2 style="margin: 0; font-size: 14px">Regra de 3</h2>
+        <div style="display: flex; gap: 8px; flex-wrap: wrap; margin-top: 8px">
+          <label style="flex: 1; min-width: 80px"
+            >A
+            <input
+              id="ruleA"
+              type="number"
+              step="any"
+              placeholder="Ex: 10"
+              style="
+                width: 100%;
+                padding: 6px;
+                border-radius: 6px;
+                border: 1px solid #ddd;
+                margin-top: 6px;
+              "
+            />
+          </label>
+          <label style="flex: 1; min-width: 80px"
+            >B
+            <input
+              id="ruleB"
+              type="number"
+              step="any"
+              placeholder="Ex: 20"
+              style="
+                width: 100%;
+                padding: 6px;
+                border-radius: 6px;
+                border: 1px solid #ddd;
+                margin-top: 6px;
+              "
+            />
+          </label>
+          <label style="flex: 1; min-width: 80px"
+            >C
+            <input
+              id="ruleC"
+              type="number"
+              step="any"
+              placeholder="Ex: 5"
+              style="
+                width: 100%;
+                padding: 6px;
+                border-radius: 6px;
+                border: 1px solid #ddd;
+                margin-top: 6px;
+              "
+            />
+          </label>
+        </div>
+        <div style="display: flex; gap: 8px; margin-top: 8px">
+          <button id="calcRule" class="btn" style="flex: 1">Calcular</button>
+          <button id="clearRule" class="btn" style="flex: 1">Limpar</button>
+        </div>
+        <div
+          id="ruleResult"
+          aria-live="polite"
+          style="margin-top: 8px; color: #333; font-weight: 600"
+        >
+          Resultado: —
+        </div>
+      </section>
+    </main>
+
+
     <main>
       <section class="group">
         <div
@@ -87,75 +155,9 @@
         />
       </section>
 
-      <!-- Regra de 3: usuário insere 3 números e obtém o resultado -->
-      <section class="group">
-        <h2 style="margin: 0; font-size: 14px">Regra de 3</h2>
-        <div style="display: flex; gap: 8px; flex-wrap: wrap; margin-top: 8px">
-          <label style="flex: 1; min-width: 80px"
-            >A
-            <input
-              id="ruleA"
-              type="number"
-              step="any"
-              placeholder="Ex: 10"
-              style="
-                width: 100%;
-                padding: 6px;
-                border-radius: 6px;
-                border: 1px solid #ddd;
-                margin-top: 6px;
-              "
-            />
-          </label>
-          <label style="flex: 1; min-width: 80px"
-            >B
-            <input
-              id="ruleB"
-              type="number"
-              step="any"
-              placeholder="Ex: 20"
-              style="
-                width: 100%;
-                padding: 6px;
-                border-radius: 6px;
-                border: 1px solid #ddd;
-                margin-top: 6px;
-              "
-            />
-          </label>
-          <label style="flex: 1; min-width: 80px"
-            >C
-            <input
-              id="ruleC"
-              type="number"
-              step="any"
-              placeholder="Ex: 5"
-              style="
-                width: 100%;
-                padding: 6px;
-                border-radius: 6px;
-                border: 1px solid #ddd;
-                margin-top: 6px;
-              "
-            />
-          </label>
-        </div>
-        <div style="display: flex; gap: 8px; margin-top: 8px">
-          <button id="calcRule" class="btn" style="flex: 1">Calcular</button>
-          <button id="clearRule" class="btn" style="flex: 1">Limpar</button>
-        </div>
-        <div
-          id="ruleResult"
-          aria-live="polite"
-          style="margin-top: 8px; color: #333; font-weight: 600"
-        >
-          Resultado: —
-        </div>
-      </section>
-    </main>
-
+   
     <footer>
-      <small>Desenvolvido por Equipe R3 Acessibility • Extensão exemplo</small>
+      <small>Desenvolvido por Equipe R3 Acessibility •</small>
     </footer>
 
     <script src="popup.js"></script>
